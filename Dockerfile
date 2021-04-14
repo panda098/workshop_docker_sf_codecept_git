@@ -15,11 +15,3 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN curl -sL https://deb.nodesource.com/setup_10.x  | bash -
 RUN apt-get -y install nodejs
 RUN npm install --global yarn
-
-#fix permissions
-COPY --chown=www-data:www-data . .
-
-#build project
-RUN composer install
-RUN yarn
-RUN yarn build
