@@ -1,3 +1,7 @@
+#Docker
+
+run docker-compose up
+
 # Symfony Demo Application
 
 The "Symfony Demo Application" is a reference application created to show how
